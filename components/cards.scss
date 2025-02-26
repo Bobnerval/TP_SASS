@@ -1,0 +1,31 @@
+@use '../base/variables' as v;
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  background-color: v.$background-color;
+  transition: box-shadow 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  &.card-primary {
+    border-top: 3px solid v.$primary;
+  }
+  
+  &.card-secondary {
+    border-top: 3px solid v.$secondary;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: v.$text-color;
+  }
+
+  .card-content {
+    color: v.$text-color;
+  }
+}

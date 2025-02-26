@@ -1,0 +1,24 @@
+// Import des fichiers de base
+@use 'base/reset';
+@use 'base/variables';
+@use 'base/mixins';
+@use 'base/functions';
+
+// Import des composants
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/modals';
+@use 'components/alerts';
+
+// Import du layout
+@use 'layout/grid';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/sidebar';
+
+// Import des thèmes
+@use 'themes/light';
+@use 'themes/dark';
+
+// Import des animations
+@use 'animations'; // Si vous avez créé un fichier _animations.scss

@@ -1,0 +1,16 @@
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$danger: #dc3545;
+$warning: #ffc107;
+
+$text-color: #333;
+$background-color: #fff;
+
+$font-primary: 'Arial', sans-serif;
+$font-size-base: 16px;
+$spacer: 1rem;
+
+@function darken-color($color, $percentage) {
+  @return darken($color, $percentage);
+}

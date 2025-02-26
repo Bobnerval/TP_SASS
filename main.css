@@ -1,0 +1,36 @@
+body {
+  background-color: gray;
+}
+
+/* Contenu de _reset.scss */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Contenu de _variables.scss */
+:root {
+--primary-color: #3498db;
+--secondary-color: #2ecc71;
+--font-family: 'Arial', sans-serif;
+}
+
+.button {
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+font-size: 16px;
+text-align: center;
+background-color: #3498db; /
+color: #3498db;
+border-radius: 5px;
+}
+
+.button:hover {
+background-color: darken(#3498db, 10%);
+}
+
+
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,44 @@
+@use '../base/variables' as v;
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: v.$font-size-base;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(v.$primary, 0.3);
+  }
+  
+  &.btn-primary {
+    background-color: v.$primary;
+    color: white;
+    
+    &:hover {
+      background-color: darken(v.$primary, 10%);
+    }
+  }
+  
+  &.btn-outline {
+    background-color: transparent;
+    border: 1px solid v.$primary;
+    color: v.$primary;
+    
+    &:hover {
+      background-color: v.$primary;
+      color: white;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
